@@ -1,17 +1,18 @@
 import React from "react";
 
 export const CardTop = () => {
+  const handleClick = (e) => e.stopPropagation();
   return (
     <div style={flexBox}>
       <div>
-        <h1 onClick={(e) => e.stopPropagation()} style={name}>
-          <a
-            style={{ textDecoration: "none", color: "inherit" }}
-            href="https://www.linkedin.com/in/jakobbs/"
-          >
-            JAKOB BØGH SØRENSEN
-          </a>
-        </h1>
+        <a
+          onClick={handleClick}
+          onKeyDown={handleClick}
+          style={{ textDecoration: "none", color: "inherit" }}
+          href="https://www.linkedin.com/in/jakobbs/"
+        >
+          <h1 style={name}>JAKOB BØGH SØRENSEN</h1>
+        </a>
         <h2 style={title}>Brain for hire</h2>
       </div>
       <div>
