@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import CardTop from "../components/cardTop";
+import CardTop from "../components/CardTop";
 import "../reset.css";
 
 const IndexPage = () => {
