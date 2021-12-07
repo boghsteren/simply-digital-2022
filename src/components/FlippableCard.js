@@ -23,27 +23,18 @@ export const FlippableCard = () => {
         }}
       >
         <div
-          className="back_card"
+          className="back_card card_face"
           style={{
-            height: "100%",
-            width: "100%",
-            borderRadius: "10px",
             backgroundColor: "#E4B363",
-            position: "absolute",
-            backfaceVisibility: "hidden",
           }}
         >
           <CardTop></CardTop>
           <CardBackBottom></CardBackBottom>
         </div>
         <div
+          className="card_face"
           style={{
-            height: "100%",
-            width: "100%",
-            borderRadius: "10px",
             backgroundColor: "#E8E9EB",
-            position: "absolute",
-            backfaceVisibility: "hidden",
           }}
         >
           <CardTop></CardTop>

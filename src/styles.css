@@ -22,6 +22,14 @@
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+.card_face {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 .back_card {
   -webkit-transform: rotateY(180deg);
