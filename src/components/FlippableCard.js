@@ -15,16 +15,17 @@ export const FlippableCard = () => {
       onKeyDown={handleClick}
     >
       <div
+        className={flipped && "flipped"}
         style={{
           width: "100%",
           height: "100%",
           position: "relative",
           transition: "transform 1s",
           transformStyle: "preserve-3d",
-          transform: flipped && "rotateY(180deg)",
         }}
       >
         <div
+          className="back_card"
           style={{
             height: "100%",
             width: "100%",
@@ -32,7 +33,6 @@ export const FlippableCard = () => {
             backgroundColor: "#E4B363",
             position: "absolute",
             backfaceVisibility: "hidden",
-            transform: "rotateY(180deg)",
           }}
         >
           <CardTop></CardTop>
@@ -57,7 +57,7 @@ export const FlippableCard = () => {
 };
 
 const cardHolder = {
-  padding: "20px",
+  padding: "50px",
   perspective: "600px",
   height: "45vw",
 };

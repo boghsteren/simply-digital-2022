@@ -8,3 +8,13 @@
     display: none;
   }
 }
+.flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}
+.back_card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}
