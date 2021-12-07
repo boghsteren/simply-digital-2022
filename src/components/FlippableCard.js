@@ -15,13 +15,11 @@ export const FlippableCard = () => {
       onKeyDown={handleClick}
     >
       <div
-        className={flipped && "flipped"}
+        className={`flippable ${flipped ? "flipped" : ""}`}
         style={{
           width: "100%",
           height: "100%",
           position: "relative",
-          transition: "transform 1s",
-          transformStyle: "preserve-3d",
         }}
       >
         <div

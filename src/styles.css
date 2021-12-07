@@ -8,13 +8,23 @@
     display: none;
   }
 }
-.flipped {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
+
+.flippable {
+  -webkit-transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: transform 1s;
+  -ms-transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
-.back_card {
-  transform: rotateY(180deg);
+.flipped {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.back_card {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
