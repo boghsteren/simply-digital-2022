@@ -17,6 +17,7 @@ export const CardFrontBottom = () => {
 
         <div style={slogan}>Phone: +45 41 32 95 50 </div>
         <div style={slogan}>Email: Jakob @ simply-digital.dk</div>
+        <div style={slogan}>CVR: 38465635</div>
       </div>
       <div style={{ textAlign: "right" }}>
         <div style={slogan}>Strategi</div>

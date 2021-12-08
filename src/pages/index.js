@@ -6,15 +6,24 @@ import "../reset.css";
 import CardTop from "../components/CardTop";
 import CardFrontBottom from "../components/CardFrontBottom";
 import CardBackBottom from "../components/CardBackBottom";
+import image from "../images/simply-image.png";
 
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <Helmet
-        title="Home - Simply Digital"
-        description="I am a seasoned digital generalist with a long track record."
+        title="Jakob Bøgh - Simply Digital"
+        description="Strategi, ledelse, teknologi, udvikling og forretning"
         url="https://www.simply-digital.dk/"
-      ></Helmet>
+      >
+        <meta property="og:url" content="https://www.simply-digital.dk/" />
+        <meta property="og:title" content="Jakob Bøgh - Simply Digital" />
+        <meta
+          property="og:description"
+          content="Strategi, ledelse, teknologi, udvikling og forretning"
+        />
+        <meta property="og:image" content={image} />
+      </Helmet>
       <div className="flippable_card">
         <FlippableCard></FlippableCard>
       </div>
