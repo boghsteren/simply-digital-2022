@@ -12,15 +12,15 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <Helmet
-        title="Jakob Bøgh - Simply Digital"
-        description="Strategi, ledelse, teknologi, udvikling og forretning"
+        title="Simply Digital"
+        description="Digital & Strategy. Brain for hire."
         url="https://www.simply-digital.dk/"
       >
         <meta property="og:url" content="https://www.simply-digital.dk/" />
-        <meta property="og:title" content="Jakob Bøgh - Simply Digital" />
+        <meta property="og:title" content="Simply Digital" />
         <meta
           property="og:description"
-          content="Strategi, ledelse, teknologi, udvikling og forretning"
+          content="Digital & Strategy. Brain for hire."
         />
         <meta property="og:image" content={image} />
       </Helmet>
